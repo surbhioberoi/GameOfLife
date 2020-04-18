@@ -44,6 +44,9 @@ function updateCells() {
 			if (cells[i][j] ===0 && count === 3) {
 				newCells[i][j] = 1;
 			}
+			if (cells[i][j] ===0 && count !== 3) {
+				newCells[i][j] = 0;
+			}
 
 		}
 	}
