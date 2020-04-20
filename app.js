@@ -13,7 +13,7 @@ var cellBorderColor = "gray";
 function updateCells() {
 
 	function _test(x, y) {
-		if (!(cells[x] === undefined) && cells[x][y] === 1) {
+		if (cells[x] !== undefined && cells[x][y] === 1) {
 			return 1;
 		}
 		return 0;
